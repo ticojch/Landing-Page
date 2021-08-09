@@ -22,8 +22,8 @@ body{
 #header{
     background: var(--red);
     padding: 20px 20px 0px 20px;
-    /* position: fixed;  Para telefono */
     width: 100%;
+    display: grid;
 }
 
 .header-logoMenu{
@@ -33,8 +33,9 @@ body{
 
 #logo{
     display: flex;
-    width: 40%;
+    width: 100%;
     align-items: center;
+    align-content: center;
 }
 
 #logo p{
@@ -45,43 +46,46 @@ body{
 
 #header-img{
     width: 90px;
-    min-width: 70px;
-}
-
-#menu{
-    align-self: center;
-    width: 4%;
-    min-width: 20px;
-}
-
-#menu-img{
-    width: 100%;
+    min-width: 60px;
 }
 
 #nav-bar ul{
     display: flex;
     font-size: 1.5em;
     list-style: none;
-    align-content: center;
-    justify-content: center;
+    justify-content: flex-end;
 }
 
 .nav-link{
     border-radius: 5px;
     color: var(--whithe-cultured);
     font-weight: 200;
-    padding: 5px;
+    padding: 5px 10px;
     text-decoration: none;
+}
+
+@media (max-width: 1000px){
+    #logo p{
+        font-size: 1.5rem;
+    }
+
+    #logo{
+        justify-content: center;
+    }
+
+    #header-img{
+        max-width: 85px;
+        min-width: 80px;
+    }
+
+    #nav-bar ul{
+        justify-content: center;
+    }
 }
 
 .nav-link:hover{
     background: var(--black-jet);
 
-}
-
-main{
-    /* padding: 10px 50px; */
-    /* height: 200vh; */
 }
 
 .section{
@@ -113,10 +117,11 @@ main{
 
 .features-info{
     margin-left: 10px;
+    font-size: 1.2em;
 }
 
 #section-pricing{
-    background-color: var(--blue-metallic);
+    background-color: var(--red);
     display: grid;
     grid-row: auto auto auto;
     position: relative;
@@ -165,6 +170,41 @@ main{
         grid-template-rows: repeat(3, 200px);
         justify-content: center;
     }
+
+    #header{
+        position: fixed;
+        top: 0;
+        flex-wrap: wrap;
+        margin-bottom: 200px;
+        z-index: 1;
+    }
+
+    #section-feature{
+        margin-top: 100px;
+    }
+
+    .nav-link{
+        padding: 5px;
+    }
+}
+
+#section-trailer{
+    background: #292929;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--whithe-cultured);
+}
+
+#video{
+    margin-top: 10px;
+    min-width: 200px;
+    max-width: 700px;
+    width: 60%;
+}
+
+#section-trailer h2{
+    text-align: center;
 }
 
 #register{
@@ -179,11 +219,66 @@ main{
 
 #section-preregister{
     background-color: var(--whithe-cultured);
+    padding-bottom: 30px;
+    font-style: italic;
 }
 
 #logo-discount{
     width: 80px;
     position: absolute;
-    left: calc(50% - 50px);
-    top: calc(-50px);
+    left: calc(50% - 40px);
+    top: calc(-40px);
+}
+
+#discount{
+    color: var(--red);
+    font-weight: 500;
+}
+
+.container-preregister{
+    max-width: 1200px;
+    font-size:  1.5em;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#email{
+    width: 50%;
+    padding: 10px;
+    border: 1px solid #3c3c3c;
+    border-radius: 10px;
+}
+
+#submit{
+    background-color: rgb(255, 196, 32);
+    border: none;
+    border-radius: 5px;
+    font-size: 0.8em;
+    font-weight: 800;
+    margin-top: 10px;
+    padding: 1px 5px;
+    width: 180px;
+}
+
+#submit:hover{
+    background-color: rgb(255, 187, 0);
+}
+
+footer{
+    color: var(--whithe-cultured);
+    text-align: center;
+    text-decoration: none;
+    padding: 20px;
+}
+
+footer a{
+    color: var(--whithe-cultured);
+    text-decoration: underline;
 }
