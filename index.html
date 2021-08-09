@@ -20,20 +20,75 @@
         </div>
         <nav id="nav-bar">
             <ul>
-                <li><a class="nav-link" href="#">Features</a></li>
-                <li><a class="nav-link" href="#">Pricing</a></li>
-                <li><a class="nav-link" href="#">Suscribete</a></li>
+                <li><a class="nav-link" href="#section-feature">Features</a></li>
+                <li><a class="nav-link" href="#section-pricing">Pricing</a></li>
+                <li><a class="nav-link" href="#section-preregister">Pre-registration</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section>
-            <div>
-                <img src="./assets/dispositivos.png" alt="">
-                <div>
+        <section class="section" id="section-feature">
+            <div class="features">
+                <img src="./assets/dispositivos.png" alt="Multi devices">
+                <div class="features-info">
                     <h2>Multi-device</h2>
                     <p>Connect to <em>Peliscalidad</em> using your favorite devices. <br> SmartTV, Game Consoles, Smartphones, Tablets...</p>       
                 </div>       
+            </div>
+            <div class="features">
+                <img src="./assets/suscribir.png" alt="plans">
+                <div class="features-info">
+                    <h2>Plans</h2>
+                    <p>Each <em>Peliscalidad</em> plan determines the number of devices on which you can watch Peliscalidad content at the same time, and the amount of content will vary according to the plan.</p>
+                </div>
+            </div>
+            <div class="features">
+                <img src="./assets/hd.png" alt="plans">
+                <div class="features-info">
+                    <h2>Quality</h2>
+                    <p>With Peliscalidad you can watch movies and series up to ultra high definition quality (UHD), however, you may prefer to watch in standard definition (SD), high definition (HD) or ultra high definition (UHD).</p>
+                </div>
+            </div>
+        </section>
+        <section class="section" id="section-pricing">
+            <img src="./assets/price-tag.png" alt="price" id="logo-pricing">
+            <div class="container-plans">
+                <div class="plans" id="silver">
+                    <div class="features-info">
+                        <h2>Silver</h2>
+                        <ul>
+                            <li>100 movies and 200 series</li>
+                            <li>Maximum quality (HD)</li>
+                            <li>You can only watch on one device</li>
+                        </ul>
+                    </div>       
+                </div>
+                <div class="plans" id="gold">
+                    <div class="features-info">
+                        <h2>Gold</h2>
+                        <ul>
+                            <li>400 movies and 500 series</li>
+                            <li>Maximum quality (QHD)</li>
+                            <li>You can only watch on 3 devices at a time</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="plans" id="platinum">
+                    <div class="features-info">
+                        <h2>Platinum</h2>
+                        <ul>
+                            <li>Unlimited movies and series</li>
+                            <li>Maximum quality (UHD)</li>
+                            <li>You can only watch on 5 devices at a time</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section" id="section-preregister">
+            <img src="./assets/discount.png" alt="price" id="logo-discount">
+            <div class="container-plans">
+                <p>If you pre-register now, you will receive a 20% discount in your first year</p>
             </div>
         </section>
     </main>
